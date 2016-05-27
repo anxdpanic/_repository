@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.playthis"
+       name="PlayThis"
+       version="2.1.0"
+       provider-name="anxdpanic">
+    <requires>
+        <import addon="xbmc.python" version="2.20.0"/>
+        <import addon="script.module.urlresolver" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/__run__.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Resolve and play url/file</summary>
+        <description lang="en">Will attempt to resolve and play the provided url/file location. Keeps a history of played urls for future use.[CR][CR]Artwork by @konsumer420</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    </extension>
+</addon>
+
+<addon id="context.youtube.download" version="1.1.0~alpha2" name="YouTube Download Context Menu" provider-name="anxdpanic">
+    <requires>
+        <import addon="xbmc.python" version="2.23.0"/>
+        <import addon="plugin.video.youtube" version="5.1.19"/>
+        <import addon="script.module.youtube.dl" version="16.327.0"/>
+    </requires>
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <menu>
+                <label>30001</label>
+                <item library="resources/lib/download_video_bg.py">
+                    <label>30002</label>
+                    <visible>
+                        StringCompare(Container.PluginName,plugin.video.youtube)+!ListItem.IsFolder+!StringCompare(Container.FolderPath,plugin://plugin.video.youtube/special/live/)
+                    </visible>
+                </item>
+                <item library="resources/lib/download_audio_bg.py">
+                    <label>30006</label>
+                    <visible>
+                        StringCompare(Container.PluginName,plugin.video.youtube)+!ListItem.IsFolder+!StringCompare(Container.FolderPath,plugin://plugin.video.youtube/special/live/)
+                    </visible>
+                </item>
+                <item library="resources/lib/download_video_fg.py">
+                    <label>30003</label>
+                    <visible>
+                        StringCompare(Container.PluginName,plugin.video.youtube)+!ListItem.IsFolder+!StringCompare(Container.FolderPath,plugin://plugin.video.youtube/special/live/)
+                    </visible>
+                </item>
+                <item library="resources/lib/download_audio_fg.py">
+                    <label>30007</label>
+                    <visible>
+                        StringCompare(Container.PluginName,plugin.video.youtube)+!ListItem.IsFolder+!StringCompare(Container.FolderPath,plugin://plugin.video.youtube/special/live/)
+                    </visible>
+                </item>
+                <item library="resources/lib/youtube_dl_settings.py">
+                    <label>30005</label>
+                    <visible>
+                        StringCompare(Container.PluginName,plugin.video.youtube)+!ListItem.IsFolder+!StringCompare(Container.FolderPath,plugin://plugin.video.youtube/special/live/)
+                    </visible>
+                </item>
+                <item library="resources/lib/youtube_dl_control.py">
+                    <label>30004</label>
+                    <visible>
+                        StringCompare(Container.PluginName,plugin.video.youtube)+!ListItem.IsFolder+!StringCompare(Container.FolderPath,plugin://plugin.video.youtube/special/live/)
+                    </visible>
+                </item>
+            </menu>
+        </menu>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Add Download to YouTube Add-on context menu</summary>
+        <description>Download video(mp4) and audio(m4a) from YouTube using script.module.youtube.dl via context menu in the YouTube Kodi Add-on</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.anxdpanic" name="anxdpanic Add-on Repository" version="0.9.0" provider-name="anxdpanic">
+    <requires>
+        <import addon="xbmc.python" version="2.20.0"/>
+    </requires>
+	<extension point="xbmc.addon.repository" name="anxdpanic Add-on Repository">
+		<info compressed="false">https://raw.githubusercontent.com/anxdpanic/_repository/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/anxdpanic/_repository/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/anxdpanic/_repository/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install add-ons from anxdpanic's repository.</summary>
+		<description>Install add-ons from anxdpanic's repository.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>
