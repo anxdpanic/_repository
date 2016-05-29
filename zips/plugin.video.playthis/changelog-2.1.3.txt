@@ -1,0 +1,28 @@
+2.1.3
+- add route to add to history without playback
+- ?mode=add&path=http%3A%2F%2Fexample.com%2F
+
+2.1.2
+- twitch resolver updates
+
+2.1.1
+- add URLResolver Settings action to Settings
+- add twitch resolver, resolve twitch urls and play using plugin.video.twitch
+
+2.1.0
+- add directory listing of history
+- add 'Delete from history' context menu for directory listing
+    - enables 'Delete from history', 'Add to favorites', and the rest of the Kodi default context items
+- set directory listing to default
+- add optional &history=true/false to mode=play
+- history=true default, keeps history of items played from plugin url
+
+2.0.2
+- fix playback from strm files
+- changes to url/route for strm files |req'd| &player=false
+
+2.0.1
+- fix improper resolver issue
+
+2.0.0
+- re-write of smokdpi's PlayThis
