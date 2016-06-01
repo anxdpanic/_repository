@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.playthis"
        name="PlayThis"
-       version="2.2.1"
+       version="2.2.2"
        provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
