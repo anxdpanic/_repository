@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.anxdpanic" name="anxdpanic Add-on Repository" version="0.9.0" provider-name="anxdpanic">
+<addon id="repository.anxdpanic" name="anxdpanic Add-on Repository" version="0.9.1" provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
     </requires>
+	
 	<extension point="xbmc.addon.repository" name="anxdpanic Add-on Repository">
+		<dir>
+	        <info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+	        <checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+	        <datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+	    </dir>
 		<info compressed="false">https://raw.githubusercontent.com/anxdpanic/_repository/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/anxdpanic/_repository/master/addons.xml.md5</checksum>
 		<datadir zip="true">https://raw.githubusercontent.com/anxdpanic/_repository/master/zips/</datadir>
