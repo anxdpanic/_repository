@@ -2,23 +2,48 @@
 <addons>
 <addon id="plugin.video.playthis"
        name="PlayThis"
-       version="2.2.5"
+       version="3.2.1"
        provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
-        <import addon="script.module.urlresolver" version="3.0.0"/>
+        <import addon="script.module.urlresolver" version="3.0.24"/>
+        <import addon="script.module.youtube.dl"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="resources/lib/__run__.py">
-        <provides>video</provides>
+        <provides>executable video audio image</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Resolve and play url/file</summary>
-        <description lang="en">Will attempt to resolve and play the provided url/file location. Keeps a history of played urls for future use.[CR][CR]Artwork by @konsumer420</description>
+        <news>
+- add inputstream.rtmp and inputstream.hls
+- remove twitch from runplugin exceptions
+- jsonrpc now uses POST instead of GET
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/media/screenshots/screenshot000.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot001.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot002.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot003.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot004.jpg</screenshot>
+        </assets>
+        <summary lang="en">Find and resolve media from a url to play or open.</summary>
+        <description lang="en">
+PlayThis will attempt to find and resolve* media from a url to play or open. A history list is available for future use, exporting to .m3u/.strm** and sending to a remote PlayThis add-on. Supports video, audio, images and executable***.
+* resolves using URLResolver and youtube-dl
+** exported .m3u/.strm is only usable in Kodi w/ PlayThis installed
+*** 'executable' items are urls with potential results available through scraping
+
+Companion browser extension available on the Chrome Web Store and Mozilla's AMO Gallery
+
+Artwork by @konsumer420
+        </description>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    </extension>
-    <website>https://github.com/anxdpanic/plugin.video.playthis#playthis</website>
-    <source>https://github.com/anxdpanic/plugin.video.playthis</source>
+        <forum> </forum>
+        <website>https://github.com/anxdpanic/plugin.video.playthis#playthis</website>
+        <source>https://github.com/anxdpanic/plugin.video.playthis</source>
+	</extension>
 </addon>
 
 <addon id="context.youtube.download" version="1.1.0" name="YouTube Download Context Menu" provider-name="anxdpanic">
@@ -77,7 +102,7 @@
     </extension>
 </addon>
 
-<addon id="repository.anxdpanic" name="anxdpanic Add-on Repository" version="0.9.2" provider-name="anxdpanic">
+<addon id="repository.anxdpanic" name="anxdpanic Add-on Repository" version="0.9.4" provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
     </requires>
@@ -88,9 +113,9 @@
 	        <checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
 	        <datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
 	    </dir>
-		<info compressed="false">https://offshoregit.com/anxdpanic/repository/addons.xml</info>
-		<checksum>https://offshoregit.com/anxdpanic/repository/addons.xml.md5</checksum>
-		<datadir zip="true">https://offshoregit.com/anxdpanic/repository/zips/</datadir>
+        <info compressed="false">https://raw.githubusercontent.com/anxdpanic/_repository/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/anxdpanic/_repository/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/anxdpanic/_repository/master/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install add-ons from anxdpanic's repository.</summary>
