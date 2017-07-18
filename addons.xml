@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.playthis"
        name="PlayThis"
-       version="3.3.0.2"
+       version="3.3.0.3"
        provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
@@ -14,7 +14,8 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <news>
-- add external resolver plugins
+- remove external resolver plugins
+- resolve requiring to back out of add-on twice
         </news>
         <assets>
             <icon>icon.png</icon>
