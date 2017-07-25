@@ -14,8 +14,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <news>
-- remove external resolver plugins
-- resolve requiring to back out of add-on twice
+- add xxx smu resolvers
         </news>
         <assets>
             <icon>icon.png</icon>
