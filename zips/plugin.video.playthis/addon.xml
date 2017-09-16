@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.playthis"
        name="PlayThis"
-       version="3.4.0"
+       version="3.4.1"
        provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
@@ -14,10 +14,9 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <news>
-- Kodi 16 + required
-- use inputstream.adaptive for hls if supported
-- expand check for dash content type
-- fix single source return
+- update strings path
+- add debug log to failed head requests
+- add reddit resolver
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -28,8 +27,8 @@
             <screenshot>resources/media/screenshots/screenshot003.jpg</screenshot>
             <screenshot>resources/media/screenshots/screenshot004.jpg</screenshot>
         </assets>
-        <summary lang="en">Find and resolve media from a url to play or open.</summary>
-        <description lang="en">
+        <summary lang="en_gb">Find and resolve media from a url to play or open.</summary>
+        <description lang="en_gb">
 PlayThis will attempt to find and resolve* media from a url to play or open. A history list is available for future use, exporting to .m3u/.strm** and sending to a remote PlayThis add-on. Supports video, audio, images and executable***.
 * resolves using URLResolver and youtube-dl
 ** exported .m3u/.strm is only usable in Kodi w/ PlayThis installed
@@ -39,6 +38,7 @@ Companion browser extension available on the Chrome Web Store and Mozilla's AMO 
 
 Artwork by @konsumer420
         </description>
+        <language> </language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
         <forum> </forum>
