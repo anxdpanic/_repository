@@ -1,0 +1,2 @@
+1.0.2
+- use imdb for movie and tvdb for tv show identification

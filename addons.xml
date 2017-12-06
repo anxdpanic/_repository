@@ -136,7 +136,7 @@ Artwork by @konsumer420
 
 <addon id="script.trakttokodi.libconn"
        name="TraktToKodi Library Connector"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
@@ -146,6 +146,7 @@ Artwork by @konsumer420
     </extension>
     <extension point="xbmc.addon.metadata">
         <news>
+- use imdb for movie and tvdb for tv show identification
         </news>
         <assets>
             <icon>icon.png</icon>
