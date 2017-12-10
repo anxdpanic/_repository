@@ -134,6 +134,42 @@ Artwork by @konsumer420
 	</extension>
 </addon>
 
+<addon id="script.trakttokodi.embycon"
+       name="TraktToKodi EmbyCon Connector"
+       version="1.0.0"
+       provider-name="anxdpanic">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="plugin.video.embycon" version="1.3.50"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/__run__.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <news>
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart></fanart>
+            <screenshot></screenshot>
+        </assets>
+        <summary lang="en_gb">EmbyCon connector for TraktToKodi browser extension</summary>
+        <description lang="en_gb">
+TraktToKodi EmbyCon Connector connects TraktToKodi (browser extension) to EmbyCon, and will open/play your EmbyCon content from trakt.tv in your browser.
+
+Required TraktToKodi browser extension available on the Chrome Web Store and Mozilla's AMO Gallery
+
+Artwork by @konsumer420
+        </description>
+        <language></language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum></forum>
+        <website>https://github.com/anxdpanic/script.trakttokodi.embycon#trakttokodi-embycon-connector</website>
+        <source>https://github.com/anxdpanic/script.trakttokodi.embycon</source>
+	</extension>
+</addon>
+
 <addon id="script.trakttokodi.libconn"
        name="TraktToKodi Library Connector"
        version="1.0.2"
