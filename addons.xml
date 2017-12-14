@@ -136,7 +136,7 @@ Artwork by @konsumer420
 
 <addon id="script.trakttokodi.embycon"
        name="TraktToKodi EmbyCon Connector"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
