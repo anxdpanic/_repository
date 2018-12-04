@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<addon id='plugin.video.bplex' name='bPlex' version='1.0.2' provider-name='anxdpanic'>
+<addon id='plugin.video.bplex' name='bPlex' version='1.1.0' provider-name='anxdpanic'>
     <requires>
         <import addon='xbmc.python' version='2.24.0'/>
         <import addon='script.module.six' version='1.11.0'/>
@@ -11,6 +11,11 @@
     </extension>
     <extension point='xbmc.addon.metadata'>
         <news>
+1.1.0
+[chg] use https setting applied during set best address
+[chg] use SPDX license identifiers
+
+1.0.2
 [fix] sign in dialog partially cutting off directions
 [fix] local servers
 [fix] logging non-strings types
@@ -19,7 +24,7 @@
             <icon>icon.png</icon>
         </assets>
         <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <license>GPL-2.0-or-later</license>
         <source>https://github.com/anxdpanic/plugin.video.bplex</source>
         <summary lang='en_GB'>Browse and play video, music and photo media files managed by Plex Media Server. Fork of PleXBMC by Hippojay</summary>
         <description lang='en_GB'>Browse and play video, music and photo media files managed by Plex Media Server. Fork of PleXBMC by Hippojay</description>
