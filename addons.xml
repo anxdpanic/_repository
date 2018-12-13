@@ -71,7 +71,7 @@
     </extension>
 </addon>
 
-<addon id='plugin.video.bplex' name='bPlex' version='1.4.0' provider-name='anxdpanic'>
+<addon id='plugin.video.bplex' name='bPlex' version='1.5.0' provider-name='anxdpanic'>
     <requires>
         <import addon='xbmc.python' version='2.24.0'/>
         <import addon='script.module.six' version='1.11.0'/>
@@ -83,9 +83,10 @@
     </extension>
     <extension point='xbmc.addon.metadata'>
         <news>
-1.4.0
-[upd] sign in/out, switch user, display servers, and refresh data menu items
-[upd] updates to playback monitoring
+1.5.0
+[add] add 'Cache' settings category and 'Server Cache TTL' setting
+[add] add 'Transcode > 8-bit' to 'Playback' settings
+[chg] change devicename setting label and default
         </news>
         <assets>
             <icon>icon.png</icon>
