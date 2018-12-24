@@ -71,7 +71,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.bplex" name="bPlex" version="1.5.2" provider-name="anxdpanic">
+<addon id="plugin.video.bplex" name="bPlex" version="1.5.3" provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -83,6 +83,9 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <news>
+1.5.3
+[fix] fixup plots
+
 1.5.2
 [add] Description to file and folder items
 [chg] Make the server detection notification optional
