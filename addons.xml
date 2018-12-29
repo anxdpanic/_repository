@@ -71,7 +71,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.bplex" name="bPlex" version="1.6.0" provider-name="anxdpanic">
+<addon id="plugin.video.bplex" name="bPlex" version="1.7.0" provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -83,9 +83,10 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <news>
-1.6.0
-[chg] always prefix main menu items with the server name
-[upd] revert plot changes
+1.7.0
+[add] Settings - Look and Feel - Server name prefix on the main menu
+[upd] Request headers; change platform and device name
+[lang] localize section titles; Movies, TV Shows, Photos and Music
         </news>
         <assets>
             <icon>icon.png</icon>
