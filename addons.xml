@@ -71,7 +71,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.bplex" name="bPlex" version="1.7.0" provider-name="anxdpanic">
+<addon id="plugin.video.bplex" name="bPlex" version="1.7.1" provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -83,13 +83,14 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <news>
-1.7.0
-[add] Settings - Look and Feel - Server name prefix on the main menu
-[upd] Request headers; change platform and device name
-[lang] localize section titles; Movies, TV Shows, Photos and Music
+1.7.1
+[fix] By Folder titles showing as Unknown
+[fix] add missing mediatypes
+[upd] icon and fanart
         </news>
         <assets>
             <icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
         </assets>
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
