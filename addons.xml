@@ -104,7 +104,7 @@
 
 <addon id="plugin.video.playthis"
        name="PlayThis"
-       version="3.6.0"
+       version="4.0.0"
        provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
@@ -112,15 +112,20 @@
         <import addon="script.module.resolveurl" version="5.0.0" optional="true"/>
         <import addon="script.module.urlresolver.xxx" optional="true"/>
         <import addon="script.module.resolveurl.xxx" optional="true"/>
+        <import addon="plugin.video.youtube" optional="true" version="6.2.0"/>
         <import addon="script.module.youtube.dl"/>
+        <import addon="script.module.six" version="1.11.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="resources/lib/__run__.py">
         <provides>executable video audio image</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <news>
-- add optional ResolveURL
-- ResolveURL default when URLResolver and ResolveURL are present
+[add] use YouTube add-on to resolve YouTube links if the add-on is available
+[add] reuse language invoker
+[add] Python 3 compat.
+[upd] use SPDX license identifiers
+[upd] resolve inspections and cosmetics
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -144,10 +149,10 @@ Artwork by @konsumer420
         </description>
         <language></language>
         <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum></forum>
+        <license>GPL-3.0-only</license>
         <website>https://github.com/anxdpanic/plugin.video.playthis#playthis</website>
         <source>https://github.com/anxdpanic/plugin.video.playthis</source>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
 	</extension>
 </addon>
 
