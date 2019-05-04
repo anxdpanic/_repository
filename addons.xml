@@ -71,7 +71,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.bplex" name="bPlex" version="1.7.1" provider-name="anxdpanic">
+<addon id="plugin.video.bplex" name="bPlex" version="1.8.0" provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -81,16 +81,15 @@
     <extension point="xbmc.python.pluginsource" library="resources/lib/entry_point.py">
         <provides>video audio image</provides>
     </extension>
+    <extension point="xbmc.service" library="resources/lib/service_entry_point.py" start="login"/>
     <extension point="xbmc.addon.metadata">
         <news>
-1.7.1
-[fix] By Folder titles showing as Unknown
-[fix] add missing mediatypes
-[upd] icon and fanart
+1.8.0
+[fix] content not marked as watched on completion
         </news>
         <assets>
             <icon>icon.png</icon>
-			<fanart>fanart.png</fanart>
+            <fanart>fanart.png</fanart>
         </assets>
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
@@ -102,30 +101,21 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.playthis"
-       name="PlayThis"
-       version="4.0.0"
-       provider-name="anxdpanic">
+<addon id="plugin.video.playthis" name="PlayThis" version="4.0.1" provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
-        <import addon="script.module.urlresolver" version="3.0.0" optional="true"/>
-        <import addon="script.module.resolveurl" version="5.0.0" optional="true"/>
-        <import addon="script.module.urlresolver.xxx" optional="true"/>
-        <import addon="script.module.resolveurl.xxx" optional="true"/>
-        <import addon="plugin.video.youtube" optional="true" version="6.2.0"/>
-        <import addon="script.module.youtube.dl"/>
         <import addon="script.module.six" version="1.11.0"/>
+        <import addon="script.module.youtube.dl" version="18.619.0"/>
+        <import addon="plugin.video.youtube" version="6.2.0" optional="true"/>
+        <import addon="script.module.resolveurl" version="5.0.0" optional="true"/>
+        <import addon="script.module.resolveurl.xxx" version="2.0.0" optional="true"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="resources/lib/__run__.py">
         <provides>executable video audio image</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <news>
-[add] use YouTube add-on to resolve YouTube links if the add-on is available
-[add] reuse language invoker
-[add] Python 3 compat.
-[upd] use SPDX license identifiers
-[upd] resolve inspections and cosmetics
+[rem] URLResolver as optional dependency
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -136,10 +126,10 @@
             <screenshot>resources/media/screenshots/screenshot003.jpg</screenshot>
             <screenshot>resources/media/screenshots/screenshot004.jpg</screenshot>
         </assets>
-        <summary lang="en_gb">Find and resolve media from a url to play or open.</summary>
-        <description lang="en_gb">
+        <summary lang="en_GB">Find and resolve media from a url to play or open.</summary>
+        <description lang="en_GB">
 PlayThis will attempt to find and resolve* media from a url to play or open. A history list is available for future use, exporting to .m3u/.strm** and sending to a remote PlayThis add-on. Supports video, audio, images and executable***.
-* resolves using ResolveURL(optional) or URLResolver(optional), and youtube-dl
+* resolves using youtube-dl and ResolveURL(optional)
 ** exported .m3u/.strm is only usable in Kodi w/ PlayThis installed
 *** 'executable' items are urls with potential results available through scraping
 
@@ -153,7 +143,7 @@ Artwork by @konsumer420
         <website>https://github.com/anxdpanic/plugin.video.playthis#playthis</website>
         <source>https://github.com/anxdpanic/plugin.video.playthis</source>
         <reuselanguageinvoker>true</reuselanguageinvoker>
-	</extension>
+    </extension>
 </addon>
 
 <addon id="repository.anxdpanic" name="anxdpanic Add-on Repository" version="0.9.8" provider-name="anxdpanic">
