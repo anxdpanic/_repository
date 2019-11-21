@@ -71,7 +71,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.composite_for_plex" name="Composite" version="0.0.3" provider-name="anxdpanic">
+<addon id="plugin.video.composite_for_plex" name="Composite" version="0.0.4" provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -84,9 +84,10 @@
     <extension point="xbmc.service" library="resources/lib/service_entry_point.py" start="login"/>
     <extension point="xbmc.addon.metadata">
         <news>
-[add] Go to ... Season X and TV Show context menu items on episodes
-[add] enable reuselanguageinvoker
-[fix] remove argv globals
+[add] &#39;Add to playlist&#39; context menu (Maven85 @ https://github.com/Maven85/plugin.video.plexbmc/commit/05eb606)
+[add] &#39;Delete from playlist&#39; context menu (Maven85 @ https://github.com/Maven85/plugin.video.plexbmc/commit/5322def)
+[chg] hide the &#39;Delete&#39; context menu by default, toggled in Settings - Advanced
+[chg] limit when &#39;Go to&#39; context menu is used on episodes
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -95,8 +96,7 @@
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
         <source>https://github.com/anxdpanic/plugin.video.composite_for_plex</source>
-        <summary lang="en_GB">Browse and play video, music and photo media files managed by Plex Media Server. Fork of PleXBMC by Hippojay</summary>
-        <description lang="en_GB">Browse and play video, music and photo media files managed by Plex Media Server. Fork of PleXBMC by Hippojay</description>
+        <summary lang="en_GB">Browse and play video, music and photo media files managed by Plex Media Server.[CR][CR]Fork of PleXBMC by Hippojay</summary>
         <disclaimer lang="en_GB">Composite is NOT an official Plex add-on and is not supported or endorsed by Plex.</disclaimer>
         <reuselanguageinvoker>true</reuselanguageinvoker>
     </extension>
