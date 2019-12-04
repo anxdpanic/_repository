@@ -1,0 +1,149 @@
+0.1.4
+[add] translations for widget titles
+[fix] data cache not updated on mark (un)watched, and playback
+[upd] improve data caching, less cached data required
+[upd] refactor data caching
+[upd] refactor list item creation
+
+0.1.3
+[chg] use same caching mechanism for data caching as server cache
+    - [fix] widget caching
+[rem] dependency on script.common.plugin.cache
+
+0.1.2
+[fixup] wrong minimum dependency version
+
+0.1.1
+[add] Widgets
+[add] Data caching using script.common.plugin.cache
+[fix] Episode artwork
+
+0.1.0
+[upd] refactor routing and add-on
+[upd] cosmetics
+
+0.0.10
+[upd] update Sign In and Manage myPlex dialog layouts
+[fix] playback monitoring threads not being cleaned up
+
+0.0.9
+[upd] refactor Up Next support
+[upd] use base64 encoding instead of hex for Up Next
+[rem] removed legacy transcode
+
+0.0.8
+[add] Settings - Up Next - Use episode thumbs, default is to use landscape/fanart
+[fix] playback monitoring logic issue introduced in 0.0.7
+
+0.0.7
+[add] text based fallback to pin based login if gui fails (py3)
+[upd] linting
+
+0.0.6
+[fix] Up Next on python 3.x < 3.6
+
+0.0.5
+[add] Support for Up Next (service.upnext)
+[add] Support for adding/removing music tracks from playlists
+
+0.0.4
+[add] 'Add to playlist' context menu (Maven85 @ https://github.com/Maven85/plugin.video.plexbmc/commit/05eb606)
+[add] 'Delete from playlist' context menu (Maven85 @ https://github.com/Maven85/plugin.video.plexbmc/commit/5322def)
+[chg] hide the 'Delete' context menu by default, toggled in Settings - Advanced
+[chg] limit when 'Go to' context menu is used on episodes
+
+0.0.3
+[add] Go to ... Season X and TV Show context menu items on episodes
+[add] enable reuselanguageinvoker
+[fix] remove argv globals
+
+0.0.2
+[fix] playback monitoring on python 3
+
+0.0.1
+[chg] Rename and change icon, don't use 'Plex' or the Plex icon.
+
+1.8.0
+[fix] content not marked as watched on completion
+
+1.7.1
+[fix] By Folder titles showing as Unknown
+[fix] add missing mediatypes
+[upd] icon and fanart
+
+1.7.0
+[add] Settings - Look and Feel - Server name prefix on the main menu
+[upd] Request headers; change platform and device name
+[lang] localize section titles; Movies, TV Shows, Photos and Music
+
+1.6.0
+[chg] always prefix main menu items with server name
+[upd] revert plot changes
+
+1.5.3
+[fix] fixup plots
+
+1.5.2
+[add] Description to file and folder items
+[chg] Make the server detection notification optional
+
+1.5.1
+[upd] Improve playback monitoring and reporting
+
+1.5.0
+[add] add 'Cache' settings category and 'Server Cache TTL' setting
+[add] add 'Transcode > 8-bit' to 'Playback' settings
+[chg] change devicename setting label and default
+
+1.4.0
+[upd] sign in/out, switch user, display servers, and refresh data menu items
+[upd] updates to playback monitoring
+
+1.3.2
+[add] add a simple progress dialog for server discovery
+
+1.3.1
+[chg] make errors during logging non-blocking
+[rem] removed invalid infoLabel tvshowname
+
+1.3.0
+[upd] use threaded head requests to configure best connection address
+
+1.2.2
+[chg] Platform and device name
+
+1.2.1
+[i18n] remove i18n from get_status
+
+1.2.0
+[fix] append default port to provided address if required
+[chg] use xbmcgui for notifications
+[chg] variable refactoring
+[upd] suppress some inspections
+[i18n] string mapping for readability
+
+1.1.2
+[upd] improve address selection
+[upd] remove wildcard imports
+
+1.1.1
+[fix] set_best_address ip comparison
+[fix] log failed logging message coercion
+
+1.1.0
+[chg] use RunScript for Refresh Data
+[chg] use https setting applied during set best address
+[chg] use SPDX license identifiers
+
+1.0.2
+[fix] sign in dialog partially cutting off directions
+[fix] local servers
+[fix] logging non-strings types
+
+1.0.1
+[fix] log encoding
+
+1.0.0
+- Initial stable release after fork of PleXBMC
+https://github.com/hippojay/plugin.video.plexbmc
+https://github.com/Tgxcorporation/plugin.video.plexbmc
