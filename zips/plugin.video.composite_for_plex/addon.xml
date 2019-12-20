@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.composite_for_plex" name="Composite" version="0.4.0" provider-name="anxdpanic">
+<addon id="plugin.video.composite_for_plex" name="Composite" version="0.5.0" provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -15,14 +15,15 @@
     <extension point="xbmc.service" library="resources/lib/service_entry_point.py" start="login"/>
     <extension point="xbmc.addon.metadata">
         <news>
-[add] Plex Companion receiver *experimental
-[add] Settings - Look and Feel - Main Menu - Show [menu item]
-    - show or hide some main menu items
-[fix] Settings not taking effect due to reuselanguageinvoker
-[fix] Only verify cert for secure connections, and honor the Certificate Verification setting |contrib: Maven85|
-[fix] Some sockets not being closed after use
-[upd] Updated the settings menu
-[rem] Remove Clean context menus setting
+[add] Playlist creation and deletion
+[add] Support photo playlists
+[fix] add basic path protection to cache related actions
+[fix] only allow one dialog at a time ie. accidentally opening multiple sign in dialogs
+[fix] Settings - Server - Manage myPlex when sign in required
+[fix] Photos not playing
+[upd] improve Manage myPlex and Sign In dialogs
+[upd] simplify the main menu when not signed in
+[rem/fix] remove redirect hack that was used for signing in
 [lang] German (de_DE) |contrib: Maven85|
         </news>
         <assets>
