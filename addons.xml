@@ -68,7 +68,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.composite_for_plex" name="Composite" version="1.1.1" provider-name="anxdpanic">
+<addon id="plugin.video.composite_for_plex" name="Composite" version="1.2.0" provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -84,11 +84,15 @@
     <extension point="xbmc.service" library="resources/lib/service_entry_point.py" start="login"/>
     <extension point="xbmc.addon.metadata">
         <news>
-[add] end-point to search for movies/episodes from all available servers for external use ie. TheMovieDb Helper
-[fix] browsing By Folder
-[fix] login on Kodi 19/Matrix due to removal of deprecated isPassword
-[fix] Up Next when duration is unavailable
-[upd] improve debug logging and masking of private data
+[add] added intro skipping (Requires Plex Pass)
+[add] added lyrics info label for lyrics provided by Plex (Requires Plex Pass)
+[add] added setting to configure forced subtitles as default(forced)
+[add] added setting to configure mixed content type behavior
+[add] added support for custom access urls (ie. nginx)
+      - Main Menu - Manage Servers - &lt;server&gt; - Custom access urls - Add custom access url
+[fix] possible timestamp out of range for movies
+[chg] All Movies, All Shows, All Artists, and All Photos are no longer shortened to All
+[lang] German (de_DE) |contrib: Maven85|
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -106,7 +110,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.playthis" name="PlayThis" version="5.0.1" provider-name="anxdpanic">
+<addon id="plugin.video.playthis" name="PlayThis" version="5.0.2" provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -118,9 +122,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <news>
-[fix] progress dialog in Kodi 19 nightlies
-[fix] inputstream property in Kodi 19 nightlies
-[fix] handling of inputstream.adaptive not being installed
+[upd] Use new settings format on Kodi 19
         </news>
         <assets>
             <icon>icon.png</icon>
