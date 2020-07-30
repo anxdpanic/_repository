@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.anxdpanic" name="anxdpanic Add-on Repository" version="0.9.8" provider-name="anxdpanic">
+<addon id="repository.anxdpanic" name="anxdpanic Add-on Repository" version="0.9.9" provider-name="anxdpanic">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
     </requires>
 	
 	<extension point="xbmc.addon.repository" name="anxdpanic Add-on Repository">
-        <info compressed="false">https://raw.githubusercontent.com/anxdpanic/_repository/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/anxdpanic/_repository/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/anxdpanic/_repository/master/zips/</datadir>
+        <info compressed="false">http://panicked.xyz/repository/anxdpanic/python2/addons.xml</info>
+        <checksum>http://panicked.xyz/repository/anxdpanic/python2/addons.xml.md5</checksum>
+        <datadir zip="true">http://panicked.xyz/repository/anxdpanic/python2/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install add-ons from anxdpanic's repository.</summary>
